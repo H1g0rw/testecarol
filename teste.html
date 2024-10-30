@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carolzinha</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            font-size: 20px;
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #button-heart {
+            background-color: #a30000;
+            color: white;
+        }
+        #button-heart:hover {
+            background-color: #ff3b3b;
+        }
+        #button-pink-heart {
+            background-color: #a30000;
+            color: white;
+        }
+        #button-pink-heart:hover {
+            background-color: #ff3b3b;
+        }
+        .emoji {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Escolhe um botao gatinha!</h2>
+
+    <button id="button-heart" onclick="showRedHeart()">Clica aqui</button>
+    <button id="button-pink-heart" onclick="showPinkHeart()">Clica aqui</button>
+
+    <div id="emoji-display" class="emoji"></div>
+
+    <script>
+        function showRedHeart() {
+            document.getElementById("emoji-display").innerText = "❤️";
+        }
+
+        function showPinkHeart() {
+            document.getElementById("emoji-display").innerText = "💖";
+        }
+    </script>
+</body>
+</html>
